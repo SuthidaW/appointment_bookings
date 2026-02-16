@@ -67,6 +67,7 @@ appointment_bookings/
 
 ### 1️⃣ Clone repository
 
+
 ```bash
 git clone https://github.com/SuthidaW/appointment_bookings.git
 cd appointment_bookings
