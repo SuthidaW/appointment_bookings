@@ -119,16 +119,10 @@ JWT_SECRET_KEY=xxxx
 Run from project root:
 
 ```bash
-export APP_ENV=dev
 python -m src.app
 ```
 
-Windows:
 
-```powershell
-$env:APP_ENV="dev"
-python -m src.app
-```
 
 Server will start at:
 
@@ -252,54 +246,6 @@ Tests cover:
 ❌ Cannot access other users’ bookings
 
 ---
-
-## 🧠 How It Works
-
-### Authentication Flow
-
-1. User sends login credentials
-2. Server validates user
-3. JWT token issued
-4. Token used for authorized endpoints
-
----
-
-### Data Storage
-
-Uses in-memory Python dictionaries:
-
-* Users
-* Bookings
-
-Seed data is loaded at application startup.
-
----
-
-## 📦 Requirements
-
-```
-Flask
-flask-jwt-extended
-passlib[bcrypt]
-bcrypt<4
-python-dotenv
-pytest
-```
-
----
-
-## 🧯 Troubleshooting
-
-### ModuleNotFoundError: src
-
-Run from project root:
-
-```bash
-python -m src.app
-```
-
----
-
 
 ## ⭐ Summary
 
