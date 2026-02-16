@@ -43,7 +43,9 @@ appointment_bookings/
 │
 ├── tests/
 │   ├── conftest.py
-│   └── test_auth_and_booking.py
+│   └── test_booking.py
+│   └── test_login.py
+
 │
 ├── requirements.txt
 ├── pytest.ini
