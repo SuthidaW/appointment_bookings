@@ -109,7 +109,7 @@ profiles/<env>/.env
 ```
 APP_ENV=dev
 FLASK_DEBUG=1
-JWT_SECRET_KEY=dev-secret-change-me
+JWT_SECRET_KEY=xxxx
 ```
 
 ---
