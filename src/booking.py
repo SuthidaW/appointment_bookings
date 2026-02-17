@@ -72,12 +72,3 @@ def delete_booking(booking_id):
 
     del bookings[booking_id]
     return jsonify({"deleted": booking_id})
-
-
-@booking_bp.get("/admin/bookings")
-@jwt_required()
-def admin_list_all_bookings():
-    admin_check = require_admin()
-    if admin_check:
-        return admin_check
-    return jsonify(list(bookings.values()))
