@@ -10,7 +10,6 @@ def create_app():
     load_profile_env()
     cfg = get_config()
 
-    app.config["DEBUG"] = cfg["FLASK_DEBUG"]
     app.config["JWT_SECRET_KEY"] = cfg["JWT_SECRET_KEY"]
 
     init_jwt(app)

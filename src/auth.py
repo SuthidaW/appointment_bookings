@@ -9,7 +9,6 @@ pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 auth_bp = Blueprint("auth", __name__)
 
 def init_jwt(app):
-    app.config["JWT_SECRET_KEY"] = "CHANGE_ME_TO_SOMETHING_RANDOM"
     JWTManager(app)
 
 def hash_password(pw: str) -> str:

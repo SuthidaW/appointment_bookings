@@ -20,6 +20,5 @@ def load_profile_env() -> str:
 def get_config() -> dict:
     return {
         "APP_ENV": os.getenv("APP_ENV", "dev"),
-        "FLASK_DEBUG": os.getenv("FLASK_DEBUG", "0") == "1",
         "JWT_SECRET_KEY": os.getenv("JWT_SECRET_KEY", "CHANGE_ME"),
     }
